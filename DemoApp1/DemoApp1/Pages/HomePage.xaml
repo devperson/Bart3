@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoApp1;assembly=DemoApp1"
+             x:Class="DemoApp1.Pages.HomePage">
+  <Grid RowSpacing="0" Padding="0,20,0,0" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="0.85*"/>
+      <RowDefinition Height="0.15*"/>      
+    </Grid.RowDefinitions>
+    <Image Source="homescreen.jpg" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+    <local:ExtendedWebView x:Name="webView" IsVisible="False" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+    <Grid Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Button Text="YouTube"  HeightRequest="35" Clicked="btnYouTube_Clicked" VerticalOptions="Center" HorizontalOptions="Center"/>
+      <Button Grid.Column="1" Text="About"  HeightRequest="35" Clicked="btnAbout_Clicked" VerticalOptions="Center" HorizontalOptions="Center"/>
+      <Button Grid.Column="2" Text="Company" HeightRequest="35" Clicked="btnCompany_Clicked" VerticalOptions="Center" HorizontalOptions="Center"/>
+      <Button Grid.Column="3" Text="Popup"  HeightRequest="35" Clicked="btnPopup_Clicked" VerticalOptions="Center" HorizontalOptions="Center"/>
+    </Grid>
+  </Grid>
+</ContentPage>

@@ -1,0 +1,19 @@
+<html>
+    <body style="overflow: hidden; padding:0; margin:0;">
+        <iframe id="video" frameborder="0" allowfullscreen></iframe>
+
+
+        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+                $(window).resize(function () {
+                    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+                });
+
+                $('#video').attr('src', 'https://www.youtube.com/embed/bulLh_-Fal8');
+            });
+        </script>
+    </body>
+</html>
