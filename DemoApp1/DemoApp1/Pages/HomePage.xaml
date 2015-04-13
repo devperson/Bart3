@@ -9,7 +9,6 @@
       <RowDefinition Height="0.15*"/>      
     </Grid.RowDefinitions>
     <Image Source="homescreen.jpg" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
-    <local:ExtendedWebView x:Name="webView" IsVisible="False" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
 
     <Grid Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
       <Grid.ColumnDefinitions>

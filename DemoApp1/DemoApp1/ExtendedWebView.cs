@@ -11,6 +11,7 @@ namespace DemoApp1
     {
         public event EventHandler<string> OnLoadFile;
         public event EventHandler<string> OnLoadYouTube;
+        public event EventHandler OnUnloadYouTube;
 
         public void LoadFile(string local)
         {
@@ -22,6 +23,12 @@ namespace DemoApp1
         {
             if (OnLoadYouTube != null)
                 this.OnLoadYouTube(this, url);
+        }
+
+        public void UnloadYouTube()
+        {
+            if (OnUnloadYouTube != null)
+                this.OnUnloadYouTube(this, EventArgs.Empty);
         }
     }
 }
