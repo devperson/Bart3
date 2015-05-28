@@ -9,8 +9,7 @@ namespace DemoApp1.Pages
 {
     public partial class HomePage : ContentPage
     {
-        bool isFirstTimeLoad = true;
-    {        
+        bool isFirstTimeLoad = true;            
         public HomePage()
         {            
             InitializeComponent();
