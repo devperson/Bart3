@@ -8,8 +8,7 @@ using Xamarin.Forms;
 namespace DemoApp1.Pages
 {
     public partial class HomePage : ContentPage
-    {
-        bool isFirstTimeLoad = true;
+    {        
         public HomePage()
         {            
             InitializeComponent();
@@ -17,14 +16,14 @@ namespace DemoApp1.Pages
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        public void btnYouTube_Clicked(object sender, EventArgs e)
-        {            
-            webView.IsVisible = !webView.IsVisible;
-            if (isFirstTimeLoad)
-            {
-                isFirstTimeLoad = false;
-                webView.LoadYouTube("https://www.youtube.com/embed/bulLh_-Fal8");                
-            }            
+        //public void btnYouTube_Clicked(object sender, EventArgs e)
+        //{
+        //    this.Navigation.PushAsync(new YoutubePage(), true);           
+        //}
+
+        public void btnVideo_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new VideoPage(), true);
         }
 
         public void btnAbout_Clicked(object sender, EventArgs e)
