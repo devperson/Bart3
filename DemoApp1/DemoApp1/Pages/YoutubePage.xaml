@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoApp1;assembly=DemoApp1"
+             x:Class="DemoApp1.Pages.YoutubePage">
+
+  <Grid RowSpacing="0" Padding="0,20,0,0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <StackLayout HeightRequest="50" BackgroundColor="Black">
+      <Button Image="backArrow.jpg"  Clicked="btnBack_Clicked" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"/>
+    </StackLayout>
+
+    <Label Text="YouTube Page" TextColor="White" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+
+    <local:ExtendedWebView x:Name="webView" Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+  </Grid>
+  
+</ContentPage>
