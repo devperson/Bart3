@@ -8,6 +8,8 @@ using Xamarin.Forms;
 namespace DemoApp1.Pages
 {
     public partial class HomePage : ContentPage
+    {
+        bool isFirstTimeLoad = true;
     {        
         public HomePage()
         {            
