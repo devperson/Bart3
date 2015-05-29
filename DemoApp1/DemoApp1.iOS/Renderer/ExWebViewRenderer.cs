@@ -29,7 +29,7 @@ namespace DemoApp1.iOS
             var element = e.NewElement as ExtendedWebView;
             element.OnLoadFile += element_OnLoadFile;
             element.OnLoadYouTube += element_OnLoadYouTube;
-            element.OnUnloadYouTube += element_OnUnloadYouTube;
+            element.OnUnloadYouTube += element_OnUnloadYouTube;            
         }
 
         void element_OnLoadFile(object sender, string e)

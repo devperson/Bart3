@@ -28,7 +28,7 @@ namespace DemoApp1.Pages
         }
 
         public void btnAbout_Clicked(object sender, EventArgs e)
-        {
+        {            
             this.Navigation.PushAsync(new AboutPage(), true);
         }
 

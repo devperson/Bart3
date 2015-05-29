@@ -35,11 +35,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ExtendedWebView.cs" />
+    <Compile Include="Helpers\ScreenOrientaion.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Pages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.cs" />
+    <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\CompanyPage.xaml.cs">
       <DependentUpon>CompanyPage.xaml</DependentUpon>
     </Compile>
